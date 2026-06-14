@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Pockit" },
+      { name: "description", content: "Pocket Pal is a personal finance tracker for managing expenses, income, and savings." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Pockit" },
+      { property: "og:description", content: "Pocket Pal is a personal finance tracker for managing expenses, income, and savings." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Pockit" },
+      { name: "twitter:description", content: "Pocket Pal is a personal finance tracker for managing expenses, income, and savings." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/23843e07-c964-496d-8262-a3122c5f1941/id-preview-d8b369f4--7e7f4c27-aa34-41ca-a8af-f4d86d1dddfd.lovable.app-1781443897375.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/23843e07-c964-496d-8262-a3122c5f1941/id-preview-d8b369f4--7e7f4c27-aa34-41ca-a8af-f4d86d1dddfd.lovable.app-1781443897375.png" },
     ],
     links: [
       {
