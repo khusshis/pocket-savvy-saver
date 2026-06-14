@@ -1,29 +1,31 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Pockit — Your money, your story." },
+      { name: "description", content: "Pockit is a personal finance tracker for expenses, income, savings, budgets, and goals — all in one place." },
+      { property: "og:title", content: "Pockit — Your money, your story." },
+      { property: "og:description", content: "Track expenses, income, piggy bank savings, budgets, and goals with Pockit." },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  useEffect(() => {
+    window.location.replace("/pockit.html");
+  }, []);
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div style={{ minHeight: "100vh", background: "#111827", color: "#F9FAFB", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Inter, sans-serif" }}>
+      <div style={{ textAlign: "center" }}>
+        <div style={{ fontSize: "3rem" }}>🐷</div>
+        <h1 style={{ marginTop: "0.5rem" }}>Loading Pockit…</h1>
+        <p style={{ color: "#9CA3AF", marginTop: "0.5rem" }}>
+          If you aren't redirected, <a href="/pockit.html" style={{ color: "#22C55E" }}>click here</a>.
+        </p>
+      </div>
     </div>
   );
 }
