@@ -14,9 +14,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  useEffect(() => {
-    window.location.replace("/pockit.html");
-  }, []);
+  
   return (
     <div style={{ minHeight: "100vh", background: "#111827", color: "#F9FAFB", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Inter, sans-serif" }}>
       <div style={{ textAlign: "center" }}>
